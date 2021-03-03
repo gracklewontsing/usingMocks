@@ -1,6 +1,15 @@
 1.    Explain what happened with variables annotated as @Mock
+- Mock variables are generated without parameters and don't need to be constructed, as they are mock files to simulate variables that might be instantiated.
+ It's helpful in case variables require connections with databases. Mocks aren't saved.
 2.    What is the purpose of the tuple when/thenReturn?
+- when one of the tuples's parameter is called, thenreturn assigns a value, as the parameter holds no value.
 3.    What is the difference of the objects annotated as @Mock and @Spy?
+- Spy objects have to be constructed. Mock objects are 'hollow' in this sense.
 4.    When is useful to use the @InjectMocks annotation?
+- When needing to mock properties of a class, such that you can manipulate parameters you need.
 5.    Give an example of a scenario when is a good idea to use Mocks
+-   If variables require database data and there is no requirement for data to be populated from the database.
+    You can avoid the connection and fetching processes to test directly.
+    Also, if stating parameters is not required for testing purposes.
+
 
