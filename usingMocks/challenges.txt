@@ -1,0 +1,6 @@
+1.    Explain what happened with variables annotated as @Mock
+2.    What is the purpose of the tuple when/thenReturn?
+3.    What is the difference of the objects annotated as @Mock and @Spy?
+4.    When is useful to use the @InjectMocks annotation?
+5.    Give an example of a scenario when is a good idea to use Mocks
+
